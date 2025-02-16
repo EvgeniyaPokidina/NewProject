@@ -16,7 +16,6 @@ CsvReader csvReader = new CsvReader(reader,
     });
 List<Movie> records = csvReader.GetRecords<Movie>().ToList();
 reader.Close();
-
 var sortedMovies = records.OrderByDescending(f => f.Year).ThenBy(f => f.Name);
 
 foreach (Movie record in sortedMovies)
