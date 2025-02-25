@@ -18,6 +18,7 @@ List<Product> priceList = new List<Product>
     new Product(){Name="Tower",ProductType=TypeOfProduct.Frame,Price=800,Id=8},
     new Product(){Name="Water",ProductType=TypeOfProduct.CoolingSystem,Price=200,Id=9}
 };
+
 Console.Write("Введите ваше имя:");
 string name = Console.ReadLine()!;
 Console.Write("Введите ваш баланс:");
