@@ -113,6 +113,7 @@
                 </CheckBox.Background>
             </CheckBox>
             <CheckBox>
+                
                 <CheckBox.Content>Галочка</CheckBox.Content>
                 <CheckBox.Background>LightGray</CheckBox.Background>
                 <CheckBox.Foreground>LightGray</CheckBox.Foreground>
