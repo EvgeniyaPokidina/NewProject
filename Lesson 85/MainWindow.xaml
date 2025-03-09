@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lesson_85"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="800">
     <Window.Resources>
         <Style TargetType="Button" x:Key="Base">
             <Setter Property="Content" Value="Кнопка"/>
-            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Margin" Value="7"/>
             <Setter Property="Height" Value="25"/>
             <Setter Property="Background" Value="LightGray"/>
         </Style>
@@ -34,7 +34,6 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <Button Style="{StaticResource Base}"/>
             <Button Style="{StaticResource Base}"/>
             <Button Style="{StaticResource Base}"/>
             <Button Style="{StaticResource Base}"/>
@@ -75,6 +74,67 @@
             <TextBox Style="{StaticResource TextBoxStyle}"/>
             <TextBox Style="{StaticResource TextBoxStyle}"/>
             <TextBox Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>
+                    <SolidColorBrush>White</SolidColorBrush>
+                </TextBox.Foreground>
+                <TextBox.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Red" Offset="0.0"/>
+                        <GradientStop Color="Yellow" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+            <TextBox.Foreground>
+                <SolidColorBrush>White</SolidColorBrush>
+            </TextBox.Foreground>
+            <TextBox.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="Red" Offset="0.0"/>
+                    <GradientStop Color="Yellow" Offset="0.5"/>
+                    <GradientStop Color="Green" Offset="1.0"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>
+                    <SolidColorBrush>White</SolidColorBrush>
+                </TextBox.Foreground>
+                <TextBox.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Red" Offset="0.0"/>
+                        <GradientStop Color="Yellow" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>
+                    <SolidColorBrush>White</SolidColorBrush>
+                </TextBox.Foreground>
+                <TextBox.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Red" Offset="0.0"/>
+                        <GradientStop Color="Yellow" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>
+                    <SolidColorBrush>White</SolidColorBrush>
+                </TextBox.Foreground>
+                <TextBox.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <GradientStop Color="Red" Offset="0.0"/>
+                        <GradientStop Color="Yellow" Offset="0.5"/>
+                        <GradientStop Color="Green" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
             <TextBox Style="{StaticResource TextBoxStyle}">
                 <TextBox.Foreground>
                     <SolidColorBrush>White</SolidColorBrush>
@@ -93,16 +153,61 @@
                     <SolidColorBrush>LightBlue</SolidColorBrush>
                 </TextBox.Background>
             </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>White</TextBox.Foreground>
+                <TextBox.Background>
+                    <SolidColorBrush>LightBlue</SolidColorBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>White</TextBox.Foreground>
+                <TextBox.Background>
+                    <SolidColorBrush>LightBlue</SolidColorBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>White</TextBox.Foreground>
+                <TextBox.Background>
+                    <SolidColorBrush>LightBlue</SolidColorBrush>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox Style="{StaticResource TextBoxStyle}">
+                <TextBox.Foreground>White</TextBox.Foreground>
+                <TextBox.Background>
+                    <SolidColorBrush>LightBlue</SolidColorBrush>
+                </TextBox.Background>
+            </TextBox>
         </StackPanel>
         <StackPanel Grid.Column="2">
-            <CheckBox>Галочка</CheckBox>
-            <CheckBox>
+            <CheckBox Margin="0 8 0 8">Галочка</CheckBox>
+            <CheckBox Margin="0 8 0 8">Галочка</CheckBox>
+            <CheckBox Margin="0 8 0 8">Галочка</CheckBox>
+            <CheckBox Margin="0 8 0 8">Галочка</CheckBox>
+            <CheckBox Margin="0 8 0 8">
                 <CheckBox.Content>Галочка</CheckBox.Content>
                 <CheckBox.Background>
                     <SolidColorBrush>Black</SolidColorBrush>
                 </CheckBox.Background>
             </CheckBox>
-            <CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <SolidColorBrush>Black</SolidColorBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <SolidColorBrush>Black</SolidColorBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <SolidColorBrush>Black</SolidColorBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
                 <CheckBox.Content>Галочка</CheckBox.Content>
                 <CheckBox.Background>
                     <RadialGradientBrush>
@@ -112,8 +217,57 @@
                     </RadialGradientBrush>
                 </CheckBox.Background>
             </CheckBox>
-            <CheckBox>
-                
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="White" Offset="0.0"/>
+                        <GradientStop Color="White" Offset="0.25"/>
+                        <GradientStop Color="Red" Offset="0.6"/>
+                    </RadialGradientBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="White" Offset="0.0"/>
+                        <GradientStop Color="White" Offset="0.25"/>
+                        <GradientStop Color="Red" Offset="0.6"/>
+                    </RadialGradientBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="White" Offset="0.0"/>
+                        <GradientStop Color="White" Offset="0.25"/>
+                        <GradientStop Color="Red" Offset="0.6"/>
+                    </RadialGradientBrush>
+                </CheckBox.Background>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>LightGray</CheckBox.Background>
+                <CheckBox.Foreground>LightGray</CheckBox.Foreground>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>LightGray</CheckBox.Background>
+                <CheckBox.Foreground>LightGray</CheckBox.Foreground>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>LightGray</CheckBox.Background>
+                <CheckBox.Foreground>LightGray</CheckBox.Foreground>
+            </CheckBox>
+            <CheckBox Margin="0 8 0 8">
+                <CheckBox.Content>Галочка</CheckBox.Content>
+                <CheckBox.Background>LightGray</CheckBox.Background>
+                <CheckBox.Foreground>LightGray</CheckBox.Foreground>
+            </CheckBox>
+            <CheckBox Margin="0 6 0 6">
                 <CheckBox.Content>Галочка</CheckBox.Content>
                 <CheckBox.Background>LightGray</CheckBox.Background>
                 <CheckBox.Foreground>LightGray</CheckBox.Foreground>
