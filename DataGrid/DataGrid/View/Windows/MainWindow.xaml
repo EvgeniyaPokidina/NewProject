@@ -1,0 +1,94 @@
+﻿<Window x:Class="DataGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataGrid"
+        xmlns:vm="clr-namespace:DataGrid.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="800">
+
+
+
+
+    <DockPanel>
+        <DockPanel.DataContext>
+            <vm:GridViewViewModel/>
+        </DockPanel.DataContext>
+
+
+        <StackPanel DockPanel.Dock="Right"
+                    Width="200"
+                    Margin="10">
+            <TextBlock Text="Название"/>
+            <TextBox Margin="0,0,0,5" Text="{Binding GoodName}"/>
+            <TextBlock Text="Описание"/>
+            <TextBox Margin="0,0,0,5" Text="{Binding GoodDescription}"/>
+            <TextBlock Text="Цена"/>
+            <TextBox Margin="0,0,0,5" Text="{Binding GoodPrice}"/>
+            <TextBlock Text="Количество"/>
+            <TextBox Margin="0,0,0,5" Text="{Binding GoodQuantity}"/>
+            <Button Content="Добавить" Command="{Binding AddNode}"/>
+        </StackPanel>
+
+        <GroupBox DockPanel.Dock="Bottom"
+            Header="Элемент списка"
+                  Margin="10">
+            <StackPanel>
+                <TextBox Text="{Binding Value}"/>
+                <Button Content="Показать элемент" Margin="5"
+                        Command="{Binding ShowValue}"
+                        Width="150"/>
+            </StackPanel>
+        </GroupBox>
+
+        <DataGrid DockPanel.Dock="Left" ItemsSource="{Binding Products}"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Id}" Width="12*"/>
+                <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="20*"/>
+                <DataGridTextColumn Header="Описание" Binding="{Binding Description}" Width="50*"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}" Width="10*"/>
+                <DataGridTextColumn Header="Количество" Binding="{Binding Quantity}" Width="15*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        
+
+    </DockPanel>
+    <!--<Grid>
+        -->
+    <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>-->
+    <!--
+            
+        <DataGrid Grid.Row="0" ItemsSource="{Binding Products}">
+            <DataGrid.DataContext>
+                <vm:GridViewViewModel/>
+            </DataGrid.DataContext>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Content" Value="{Binding}" />
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+        </DataGrid> 
+
+        -->
+    <!--<DataGrid Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False">
+            <DataGrid.DataContext>
+                <vm:GridViewViewModel/>
+            </DataGrid.DataContext>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Модель" Binding="{Binding Path=Id}" Width="*" />
+                <DataGridHyperlinkColumn Header="Название" Binding="{Binding Path=Name}" Width="*" />
+                <DataGridTextColumn Header="Описание" Binding="{Binding Path=Description}" Width="*" />
+                <DataGridTextColumn Header="Цена" Binding="{Binding Path=Price}" Width="*" />
+                <DataGridTextColumn Header="Количество" Binding="{Binding Path=Quantity}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>-->
+    <!--
+
+    </Grid>-->
+</Window>
