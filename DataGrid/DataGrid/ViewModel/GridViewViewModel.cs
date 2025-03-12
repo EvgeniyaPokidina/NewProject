@@ -45,7 +45,6 @@ namespace DataGrid.ViewModel
         }
 
 
-
         private string _goodName;
         private string _goodDescription;
         private double _goodPrice;
